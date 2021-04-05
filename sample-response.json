@@ -1,0 +1,21 @@
+{
+    "attributes":
+    [
+        {"trait_type":"cover-image","value":"https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/Qmd9X8pJopGNnkQV6PUTUfv3gsQGPWXBDfjtpt3hySYJwt.jpg"},
+        {"trait_type":"video-uri","value":"NONE"},
+        {"trait_type":"preview-uri","value":"https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmacnJ6mk2Z36mqDbCo1DsE4SKzMQxPZjcuNfZRPdf6Jnv.mp3"},
+        {"trait_type":"source-uri","value":"https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmXGtPsV6GG2zN28srTLhmEAd7Kp8ZUNUspuUv3yLnSKSf.mp3"},
+        {"trait_type":"song-name","value":"Break"},
+        {"trait_type":"singer","value":"NONE"},
+        {"trait_type":"song-by","value":"OwO"},
+        {"trait_type":"lyrics-by","value":"NONE"},
+        {"trait_type":"arrangement","value":"OwO"},
+        {"trait_type":"publish-date","value":"2020-02-09"},
+        {"trait_type":"serial-number","value":"AQNFT-M-1-00001"},
+        {"trait_type":"introduction","value":"We remember the broken pieces of our hearts hurt. I want to throw that moment away like trash, but it stays in my mind forever"}
+    ],
+    "description":"\ud55c\uae00\ucd9c\ub825",
+    "external_url":"https://alphaquark.io",
+    "image":"ipfs://QmbdVjGKYMP5bA1bfws7DLUEXKd4Gz1M2uzqiVgGfPcwsT",
+    "name":"AlphaQuark NFT"
+}
