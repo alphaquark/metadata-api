@@ -190,9 +190,9 @@ def creature(token_id):
     _add_attribute(attributes, 'introduction', INTRODUCTION, token_id)
 
     return jsonify({
-        'name': 'My first song',
-        'description': '한글출력',
-        'image' : 'ipfs://QmbdVjGKYMP5bA1bfws7DLUEXKd4Gz1M2uzqiVgGfPcwsT',
+        'name': SONG_NAME[token_id],
+        'description': INTRODUCTION[token_id],
+        'image' : COVER_IMAGE[token_id],
         'external_url' : 'https://alphaquark.io',
         'attributes' : attributes
     })
