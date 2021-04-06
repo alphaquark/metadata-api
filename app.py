@@ -197,6 +197,20 @@ def creature(token_id):
         'attributes' : attributes
     })
 
+'''
+"description":"Intellectual property backed NFT items powered by Alpha Quark",
+"external_url":"https://alphaquark.io",
+"image":"ipfs://해시값",
+"name":"AlphaQuark NFT"
+'''
+@app.route('/contract/info')
+def contractInfo():
     return jsonify({
+        'name': 'AlphaQuark NFT',
+        'description': 'Intellectual property backed NFT items powered by Alpha Quark',
+        'image' : 'https://ipfs.io/ipfs/QmVUhm56KnARNsuqf2rewR1yAeZEaUuFUaN4h5Ek8xQzAP',
+        'external_url' : 'https://alphaquark.io',
+    })
+
 if __name__=='__main__':
     app.run(host='0.0.0.0')
