@@ -1,7 +1,9 @@
 FROM nginx:1.19.8-alpine
 
 COPY ./nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx/cert/api.alphaquark.io.crt /etc/nginx/certs/api.alphaquark.io.crt
+COPY ./nginx/cert/api.alphaquark.io.key /etc/nginx/certs/api.alphaquark.io.key
 
-EXPOSE 80
+EXPOSE 443
 
 CMD ["nginx","-g","daemon off;"]
