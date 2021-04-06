@@ -197,5 +197,6 @@ def creature(token_id):
         'attributes' : attributes
     })
 
+    return jsonify({
 if __name__=='__main__':
     app.run(host='0.0.0.0')
