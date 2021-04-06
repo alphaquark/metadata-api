@@ -164,13 +164,13 @@ def _add_attribute(existing, attribute_name, options, token_id):
 @app.route('/api/<token_id>')
 def creature(token_id):  
     try:
-        token_id = int(token_id)
+        token_id = int(token_id)-1
     except:
         return jsonify({
             'error' : 'token_id is not integer'
         })
 
-    if token_id >= len(SERIAL_NUMBER) or token_id < 0:
+    if token_id > len(SERIAL_NUMBER)-1 or token_id < -1:
         return jsonify({
             'error' : 'out of token_id range'
         })
@@ -210,6 +210,8 @@ def contractInfo():
         'description': 'Intellectual property backed NFT items powered by Alpha Quark',
         'image' : 'https://ipfs.io/ipfs/QmVUhm56KnARNsuqf2rewR1yAeZEaUuFUaN4h5Ek8xQzAP',
         'external_url' : 'https://alphaquark.io',
+        'seller_fee_basis_points': 500, # Indicates a 5% seller fee.
+        'fee_recipient': '0xA0346C590Dd9baE8F74E1A8b332ff5184c784A57' # Where seller fees will be paid to.
     })
 
 if __name__=='__main__':
