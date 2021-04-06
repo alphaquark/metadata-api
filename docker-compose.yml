@@ -23,7 +23,7 @@ services:
     # volumes:
     #   - aqt-metadata-nginx-conf:/etc/nginx
     ports:
-      - "443:443"
+      - "10443:443"
     networks:
       - aqt-metadata-backend
     restart: always
