@@ -386,7 +386,7 @@ def creature(token_id):
             'error' : 'token_id is not integer'
         })
 
-    if token_id > len(SERIAL_NUMBER)-1 or token_id < -1:
+    if token_id > len(SERIAL_NUMBER)-1 or token_id < 0:
         return jsonify({
             'error' : 'out of token_id range'
         })
