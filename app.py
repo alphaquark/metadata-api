@@ -425,9 +425,9 @@ def contractInfo():
         'name': 'AlphaQuark NFT',
         'description': 'Intellectual property backed NFT items powered by Alpha Quark',
         'image' : 'https://ipfs.io/ipfs/QmVUhm56KnARNsuqf2rewR1yAeZEaUuFUaN4h5Ek8xQzAP',
-        'external_url' : 'https://alphaquark.io',
-        'seller_fee_basis_points': 500, # Indicates a 5% seller fee.
-        'fee_recipient': '0xA0346C590Dd9baE8F74E1A8b332ff5184c784A57' # Where seller fees will be paid to.
+        'external_url' : 'https://nft.alphaquark.io',
+        #'seller_fee_basis_points': 500, # Indicates a 5% seller fee.
+        #'fee_recipient': '0xA0346C590Dd9baE8F74E1A8b332ff5184c784A57' # Where seller fees will be paid to.
     })
 
 if __name__=='__main__':
