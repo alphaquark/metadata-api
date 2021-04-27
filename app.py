@@ -51,8 +51,20 @@ COVER_IMAGE = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmSpVbBXW1HnBN1DdVemjj7WLmMfteDFX1cwj5VgHydNp1.png',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/Qmdy1jc8ct1NMnKrJNSfTU51QALwZyMoS4ps7zsnDim5mN.png',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmU6M2YLicX1ww3vL3nritLsdwyvuxBbu2uBCeX3fV5hnz.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmcoTTy18PCxerMNUaUiKYAnBb4cr5jNifhgNUhcfLjmgD.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmUD44oxhYSe52Rm4ZS4bQDwYjfv2V55SURjKzochfW8FC.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmZExEQtfYJnxE2wH6oTemzXew5JbRAfanxKunyBKe1MrE.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmRRp4QaHhpYSkwX3U2jgwUsY3pge9ME2iCZKrQP31b8Ms.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmZxgMadnpgnDjYZkgbu7ZiNqjJnMZYWKQRLZTD6UjbtmS.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmQy5yGKG4QLc1sfyrxMkSEueUZ9cgNW6jBTHh7LcTkPWk.png',
 ]
 VIDEO_URI = [
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -115,6 +127,12 @@ PREVIEW_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmSwweS5unuLumfuaeLbcF2EjzRwAFiKr1uTa8YNJXg6LQ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmSwweS5unuLumfuaeLbcF2EjzRwAFiKr1uTa8YNJXg6LQ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmSwweS5unuLumfuaeLbcF2EjzRwAFiKr1uTa8YNJXg6LQ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmbRytbqrDPPnF9qnDeqTCUcfenrXoiNjEyS5CBWEAjUmF.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmbRytbqrDPPnF9qnDeqTCUcfenrXoiNjEyS5CBWEAjUmF.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmbRytbqrDPPnF9qnDeqTCUcfenrXoiNjEyS5CBWEAjUmF.mp3',
 ]
 SOURCE_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmXGtPsV6GG2zN28srTLhmEAd7Kp8ZUNUspuUv3yLnSKSf.mp3',
@@ -147,6 +165,12 @@ SOURCE_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQC813uzupYekTzKhiSec9XgvScZtZAwv4yigsQWYYhcu.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQC813uzupYekTzKhiSec9XgvScZtZAwv4yigsQWYYhcu.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQC813uzupYekTzKhiSec9XgvScZtZAwv4yigsQWYYhcu.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmerNY1VWysk4avfT8M63bgwQ1Yh3rXPf6RhsAiT9FakSi.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmerNY1VWysk4avfT8M63bgwQ1Yh3rXPf6RhsAiT9FakSi.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmerNY1VWysk4avfT8M63bgwQ1Yh3rXPf6RhsAiT9FakSi.mp3',
 ]
 SONG_NAME = [
     'Break',
@@ -179,8 +203,20 @@ SONG_NAME = [
     'Runway',
     'Runway',
     'Runway',
+    'Dragon',
+    'Dragon',
+    'Dragon',
+    'RollerCoaster',
+    'RollerCoaster',
+    'RollerCoaster',
 ]
 SINGER = [
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -243,8 +279,20 @@ SONG_BY = [
     '901D',
     '901D',
     '901D',
+    'OwO',
+    'OwO',
+    'OwO',
+    '901D',
+    '901D',
+    '901D',
     ]
 LYRICS_BY = [
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -307,6 +355,12 @@ ARRANGEMENT = [
     '901D',
     '901D',
     '901D',
+    'OwO',
+    'OwO',
+    'OwO',
+    '901D',
+    '901D',
+    '901D',
     ]
 PUBLISH_DATE = [
     '2020-02-09',
@@ -339,6 +393,12 @@ PUBLISH_DATE = [
     '2021-01-15',
     '2021-01-15',
     '2021-01-15',
+    '2021-04-11',
+    '2021-04-11',
+    '2021-04-11',
+    '2020-03-09',
+    '2020-03-09',
+    '2020-03-09',
     ]
 SERIAL_NUMBER = [
     'AQNFT-M-1-00001',
@@ -371,6 +431,12 @@ SERIAL_NUMBER = [
     'AQNFT-M-9-00001',
     'AQNFT-M-9-00002',
     'AQNFT-M-9-00003',
+    'AQNFT-M-10-00001',
+    'AQNFT-M-10-00002',
+    'AQNFT-M-10-00003',
+    'AQNFT-M-11-00001',
+    'AQNFT-M-11-00002',
+    'AQNFT-M-11-00003',
     ]
 INTRODUCTION = [
     'We remember the broken pieces of our hearts hurt. I want to throw that moment away like trash, but it stays in my mind forever',
@@ -403,6 +469,12 @@ INTRODUCTION = [
     'Everyone in the world is excited by the sexy back of the model after walking',
     'Everyone in the world is excited by the sexy back of the model after walking',
     'Everyone in the world is excited by the sexy back of the model after walking',    
+    'There are many Dragons. About 20? We just look at the overwhelming, awe-inspiring, divine, future dangers and insuperable.',
+    'There are many Dragons. About 20? We just look at the overwhelming, awe-inspiring, divine, future dangers and insuperable.',
+    'There are many Dragons. About 20? We just look at the overwhelming, awe-inspiring, divine, future dangers and insuperable.',
+    'A feeling of speed that passes through your cool wind hair!',
+    'A feeling of speed that passes through your cool wind hair!',
+    'A feeling of speed that passes through your cool wind hair!',
     ]
 
 def _add_attribute(existing, attribute_name, options, token_id):
