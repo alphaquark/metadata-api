@@ -48,8 +48,14 @@ COVER_IMAGE = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmSpVbBXW1HnBN1DdVemjj7WLmMfteDFX1cwj5VgHydNp1.png',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/Qmdy1jc8ct1NMnKrJNSfTU51QALwZyMoS4ps7zsnDim5mN.png',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmU6M2YLicX1ww3vL3nritLsdwyvuxBbu2uBCeX3fV5hnz.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmSpVbBXW1HnBN1DdVemjj7WLmMfteDFX1cwj5VgHydNp1.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/Qmdy1jc8ct1NMnKrJNSfTU51QALwZyMoS4ps7zsnDim5mN.png',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/cover/QmU6M2YLicX1ww3vL3nritLsdwyvuxBbu2uBCeX3fV5hnz.png',
 ]
 VIDEO_URI = [
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -106,6 +112,9 @@ PREVIEW_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/preview/QmeZmw4ZyCJiEgS7QdQuq2NkNwnu3FTSuiMDpy1gQwa8VD.mp3',
 ]
 SOURCE_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmXGtPsV6GG2zN28srTLhmEAd7Kp8ZUNUspuUv3yLnSKSf.mp3',
@@ -132,6 +141,9 @@ SOURCE_URI = [
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmaHWieNLaEg7d3ozw82BkFTLDYYyCV6mYxCQYhjWhqv1n.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmaHWieNLaEg7d3ozw82BkFTLDYYyCV6mYxCQYhjWhqv1n.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmaHWieNLaEg7d3ozw82BkFTLDYYyCV6mYxCQYhjWhqv1n.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
+    'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
     'https://aqt-metadata.s3.ap-northeast-2.amazonaws.com/source/QmQrHEqMxczLQcSFghBQMbHtFBEB3y8Xv93wBZWc3r98rZ.mp3',
@@ -164,8 +176,14 @@ SONG_NAME = [
     'Runway',
     'Runway',
     'Runway',
+    'Runway',
+    'Runway',
+    'Runway',
 ]
 SINGER = [
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -222,8 +240,14 @@ SONG_BY = [
     '901D',
     '901D',
     '901D',
+    '901D',
+    '901D',
+    '901D',
     ]
 LYRICS_BY = [
+    'NONE',
+    'NONE',
+    'NONE',
     'NONE',
     'NONE',
     'NONE',
@@ -280,6 +304,9 @@ ARRANGEMENT = [
     '901D',
     '901D',
     '901D',
+    '901D',
+    '901D',
+    '901D',
     ]
 PUBLISH_DATE = [
     '2020-02-09',
@@ -306,6 +333,9 @@ PUBLISH_DATE = [
     '2020-10-01',
     '2020-10-01',
     '2020-10-01',
+    '2021-01-15',
+    '2021-01-15',
+    '2021-01-15',
     '2021-01-15',
     '2021-01-15',
     '2021-01-15',
@@ -338,6 +368,9 @@ SERIAL_NUMBER = [
     'AQNFT-M-9-00001',
     'AQNFT-M-9-00002',
     'AQNFT-M-9-00003',
+    'AQNFT-M-9-00001',
+    'AQNFT-M-9-00002',
+    'AQNFT-M-9-00003',
     ]
 INTRODUCTION = [
     'We remember the broken pieces of our hearts hurt. I want to throw that moment away like trash, but it stays in my mind forever',
@@ -367,6 +400,9 @@ INTRODUCTION = [
     'Everyone in the world is excited by the sexy back of the model after walking',
     'Everyone in the world is excited by the sexy back of the model after walking',
     'Everyone in the world is excited by the sexy back of the model after walking',
+    'Everyone in the world is excited by the sexy back of the model after walking',
+    'Everyone in the world is excited by the sexy back of the model after walking',
+    'Everyone in the world is excited by the sexy back of the model after walking',    
     ]
 
 def _add_attribute(existing, attribute_name, options, token_id):
