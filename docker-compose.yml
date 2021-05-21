@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   api:
@@ -13,6 +13,8 @@ services:
     networks:
       - aqt-metadata-backend
     restart: always
+    depends_on:
+      - db
 
   nginx:
     container_name: nginx
@@ -29,11 +31,35 @@ services:
     restart: always
     depends_on:
       - api
+      - db
 
-# volumes:
-#   aqt-metadata-nginx-conf:
-#     driver: local
+  db:
+    container_name: db
+    image: mysql:8.0
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    expose: 
+      - "3306"
+    env_file: .env   
+    networks:
+      - aqt-metadata-backend
+    restart: always
+    secrets:
+      - db_root_password
+      - db_user_password
+
+volumes:
+  db_data:
 
 networks:
   aqt-metadata-backend:
     driver: bridge
+
+secrets:
+  db_root_password:
+    file: ./secrets/db_root_password.secret
+  db_user_password:
+    file: ./secrets/db_user_password.secret
