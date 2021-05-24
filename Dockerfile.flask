@@ -3,6 +3,7 @@ FROM python:3.8-slim-buster
 # RUN apt update && apt upgrade -y
 WORKDIR /app
 COPY app.py .
+COPY models.py .
 COPY requirements.txt .
 COPY wsgi.py .
 
