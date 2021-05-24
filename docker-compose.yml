@@ -15,7 +15,7 @@ services:
     restart: always
     depends_on:
       - db
-    env_file: .env
+    env_file: .env    
 
   nginx:
     container_name: nginx
@@ -47,10 +47,7 @@ services:
     env_file: .env   
     networks:
       - aqt-metadata-backend
-    restart: always
-    secrets:
-      - db_root_password
-      - db_user_password
+    restart: always    
 
 volumes:
   db_data:
@@ -58,9 +55,3 @@ volumes:
 networks:
   aqt-metadata-backend:
     driver: bridge
-
-secrets:
-  db_root_password:
-    file: ./secrets/db_root_password.secret
-  db_user_password:
-    file: ./secrets/db_user_password.secret
