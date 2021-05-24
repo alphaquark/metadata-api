@@ -11,7 +11,7 @@ logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', level=logg
 
 app = Flask("__name__")
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@localhost:3306/{MYSQL_DATABASE}"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@db:3306/{MYSQL_DATABASE}"
 db = SQLAlchemy(app)
 
 def _add_attribute(existing, attribute_name, options):
