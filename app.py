@@ -85,7 +85,7 @@ def get_by_id(token_id):
         print(f"error: {ex}")
         return json_response(f"{{'error': {ex}}}",500)
 
-@app.route('/api', methods=['POST'])
+@app.route('/api', methods=['GET','POST'])
 def create_metadata():
     try:
         from models import MetadataSchema
