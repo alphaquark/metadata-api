@@ -8,6 +8,7 @@ COPY requirements.txt .
 COPY wsgi.py .
 
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade "sqlalchemy<1.4.0"
 
 EXPOSE 5000
 
