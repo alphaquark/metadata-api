@@ -40,8 +40,8 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d
       - db_data:/var/lib/mysql
-    ports:
-      - "3306:3306"
+    # ports:
+    #   - "3306:3306"
     expose: 
       - "3306"
     env_file: .env   
