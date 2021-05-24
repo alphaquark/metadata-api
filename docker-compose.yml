@@ -15,6 +15,7 @@ services:
     restart: always
     depends_on:
       - db
+    env_file: .env
 
   nginx:
     container_name: nginx
