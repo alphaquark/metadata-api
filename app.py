@@ -2,6 +2,7 @@ import os
 import logging
 from flask import Flask,jsonify,request,make_response
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 MYSQL_USER = os.environ.get("MYSQL_USER")
 MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
@@ -10,6 +11,8 @@ MYSQL_DATABASE = os.environ.get("MYSQL_DATABASE")
 logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', level=logging.INFO)
 
 app = Flask("__name__")
+CORS(app, resources={r'*': {'origins': '*'}})
+#CORS(app, resources={r'*': {'origins': 'https://nft.alphaquark.io', 'https://nft.alphaquark.io'}})
 
 app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@db:3306/{MYSQL_DATABASE}"
 db = SQLAlchemy(app)

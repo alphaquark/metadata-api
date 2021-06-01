@@ -9,6 +9,7 @@ COPY wsgi.py .
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --upgrade "sqlalchemy<1.4.0"
+RUN pip install flask_cors
 
 EXPOSE 5000
 
