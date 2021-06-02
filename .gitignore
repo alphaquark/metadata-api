@@ -140,3 +140,8 @@ cython_debug/
 *.secret
 /tips
 /seed
+/contracts
+/node_modules
+package.json
+package-lock.json
+/nginx/cert
