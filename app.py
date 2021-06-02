@@ -1,12 +1,27 @@
 import os
 import logging
+import uuid
+
 from flask import Flask,jsonify,request,make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
+from botocore.exceptions import ClientError
+from werkzeug.utils import secure_filename
+from boto3.s3.transfer import TransferConfig
+
+from s3client import s3connection
+
 MYSQL_USER = os.environ.get("MYSQL_USER")
 MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
 MYSQL_DATABASE = os.environ.get("MYSQL_DATABASE")
+
+LOCAL_UPLOAD_PATH = os.environ.get("LOCAL_UPLOAD_PATH")
+BUCKET_NAME = os.environ.get("BUCKET_NAME")
+BUCKET_PATH = os.environ.get("BUCKET_PATH")
+S3_PATH_PREFIX = os.environ.get("S3_PATH_PREFIX")
+
+MB = 1024**2
 
 logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', level=logging.INFO)
 
@@ -102,6 +117,43 @@ def create_metadata():
     except Exception as ex:
         logging.error(f'{ex}')
         return json_response(f"{{'error': {ex}}}",500)
+
+@app.route('/api/upload', methods=['GET','POST'])
+def upload_file():    
+    if request.method == 'POST':
+        try:
+            upload_file = request.files['file']
+            if upload_file:
+                secure_file_name = secure_filename(upload_file.filename)
+                content_type = secure_file_name.rpartition('.')[-1]
+                temp_file_name=f"{uuid.uuid4().hex}.{content_type}"
+
+                #local upload
+                target=os.path.join(LOCAL_UPLOAD_PATH,'temp')
+                if not os.path.isdir(target):
+                    os.mkdir(target)
+                temp_upload_path = "/".join([target, temp_file_name])
+                upload_file.save(temp_upload_path)
+                logging.info(f"local file upload completed : {temp_file_name}")
+
+                #s3 upload                
+                s3_path = f"{BUCKET_PATH}{temp_file_name}"
+                s3 = s3connection()
+
+                config = TransferConfig(multipart_threshold=10*MB)
+                s3.upload_file(temp_upload_path,BUCKET_NAME,s3_path,Config=config)
+
+                s3_path = f"{S3_PATH_PREFIX}/{s3_path}"
+                logging.info(f"s3 file upload completed : {s3_path}")
+                # remove temp
+                os.remove(temp_upload_path)
+                logging.info(f"local file remove completed : {temp_upload_path}")
+
+                return json_response({'s3_path': s3_path},200)
+
+        except Exception as ex:
+            logging.error(f'{ex}')
+            return json_response(f"{{'error': {ex}}}",500)
 
 def json_response(jsondata,http_status_code):
     return make_response(jsonify(jsondata),http_status_code)

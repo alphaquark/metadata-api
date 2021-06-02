@@ -7,3 +7,4 @@ marshmallow==3.11.1
 marshmallow-sqlalchemy==0.24.1
 PyMySQL==1.0.2
 Flask-Cors == 3.0.10
+boto3 == 1.17.84
